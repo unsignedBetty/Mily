@@ -1,0 +1,13 @@
+{
+		"name": "Mily",
+		"description": "A discord bot",
+		"version": "1.0.0",
+		"main": "Client.js",
+		"scripts": {
+			"start": "nocde client.js"
+		},
+		"dependencies": {
+			"discord.js": "11.1.0",
+			"request": "2.81.0"
+		}
+}

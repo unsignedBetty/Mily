@@ -3,8 +3,7 @@ const bot = new Discord.Client()
 
 bot.on('ready', function () {
 	console.log("Mily est ici!")
-	bot.user.setStatus("idle")
-	bot.user.setGame("Being developed <3")
+	bot.user.setStatus("online")
 })
 
 var lastAsk

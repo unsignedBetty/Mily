@@ -35,10 +35,14 @@ bot.on('message', message => {
 		}
 		lastAsk = message.content
 	}
+	//COMMANDS//
+	var cmd = message.content.toString().Split(" ")
 	
-	else if(message.content.indexOf(prefix+"slap") > -1) {
+	if (cmd[0] == prefix+"slap") {
 		message.reply("What are you trying to do there? :angry:")
 	}
+	//COMMANDS//
+	
 	//console.log(message.content)
 })
 

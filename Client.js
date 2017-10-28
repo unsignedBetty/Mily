@@ -43,7 +43,7 @@ bot.on('message', message => {
 			message.reply("What are you trying to do there? :angry:")	
 		}
 		else {
-			message.reply(prefix+"slap USER - Slaps an user >;)")
+			message.send(prefix+"slap USER - Slaps an user >;)")
 		}
 	}
 	//COMMANDS//

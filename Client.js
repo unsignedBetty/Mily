@@ -48,10 +48,10 @@ bot.on('message', function(message) {
 	}
 	//COMMANDS//
 	
-	console.log(message.author+" "+message.content)
+	//console.log(message.author+" "+message.content)
 })
 
-bot.on('guildMemberAdd', member => {
+bot.on('serverNewMember', serv, member => {
 	member.createDM().then(channel => {
 		return channel.send('Bienvenue sur mon serveur ' + member.displayName + '!')
 	}).catch(console.error)

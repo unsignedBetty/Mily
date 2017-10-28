@@ -43,12 +43,12 @@ bot.on('message', function(message) {
 			message.reply("What are you trying to do there? :angry:")	
 		}
 		else {
-			message.sendMessage(message, prefix+"slap USER - Slaps an user >;)")
+			message.reply(prefix+"slap USER - Slaps an user >;)")
 		}
 	}
 	//COMMANDS//
 	
-	//console.log(message.content)
+	console.log(message.author.." "..message.content)
 })
 
 bot.on('guildMemberAdd', member => {

@@ -5,7 +5,10 @@ bot.on('ready', function () {
 	console.log("Mily est ici!")
 	bot.user.setStatus("away")
 })
+
 var lastAsk
+var prefix = "mily!";
+
 bot.on('message', message => {
 	if(message.content === "<@373835182857388053>") {
 		message.reply("Hey there! :heart:")
@@ -33,7 +36,7 @@ bot.on('message', message => {
 		lastAsk = message.content
 	}
 	
-	else if(message.content.indexOf("?slap") > -1) {
+	else if(message.content.indexOf(prefix+"slap") > -1) {
 		message.reply("What are you trying to do there? :angry:")
 	}
 	//console.log(message.content)

@@ -4,7 +4,7 @@ const bot = new Discord.Client()
 bot.on('ready', function () {
 	console.log("Mily est ici!")
 	bot.user.setStatus("idle")
-	bot.setPlayingGame("Being developed <3")
+	bot.user.setGame("Being developed <3")
 })
 
 var lastAsk

@@ -4,6 +4,7 @@ const bot = new Discord.Client()
 bot.on('ready', function () {
 	console.log("Mily est ici!")
 	bot.user.setStatus("idle")
+	bot.user.setPlayingGame("Being developed <3")
 })
 
 var lastAsk
@@ -49,13 +50,6 @@ bot.on('message', function(message) {
 	//COMMANDS//
 	
 	//console.log(message.author+" "+message.content)
-})
-
-bot.on('serverNewMember', serv, member => {
-	member.createDM().then(channel => {
-		return channel.send('Bienvenue sur mon serveur ' + member.displayName + '!')
-	}).catch(console.error)
-		console.log("Maaaaiiisss euuuuhhh... :(")
 })
 
 bot.login('MzczODM1MTgyODU3Mzg4MDUz.DNYueA._mvtG6BPNwwqZ1XNs50Ho_rZZXM')

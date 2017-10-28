@@ -38,8 +38,13 @@ bot.on('message', message => {
 	//COMMANDS//
 	var cmd = message.content.split(" ")
 	
-	if (cmd[0] == prefix+"slap") {
-		message.reply("What are you trying to do there? :angry:")
+	if (cmd[0] === prefix+"slap") {
+		if (cmd[1] !== null) {
+			message.reply("What are you trying to do there? :angry:")	
+		}
+		else {
+			message.reply(prefix+"slap USER - Slaps an user >;)")
+		}
 	}
 	//COMMANDS//
 	

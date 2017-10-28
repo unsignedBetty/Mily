@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 
 bot.on('ready', function () {
 	console.log("Mily est ici!")
-	bot.user.setStatusIdle()
+	bot.user.setStatus("idle")
 })
 
 var lastAsk
@@ -43,7 +43,7 @@ bot.on('message', message => {
 			message.reply("What are you trying to do there? :angry:")	
 		}
 		else {
-			message.send(prefix+"slap USER - Slaps an user >;)")
+			message.reply(prefix+"slap USER - Slaps an user >;)")
 		}
 	}
 	//COMMANDS//

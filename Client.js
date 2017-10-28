@@ -48,7 +48,7 @@ bot.on('message', function(message) {
 	}
 	//COMMANDS//
 	
-	console.log(message.author.." "..message.content)
+	console.log(message.author+" "+message.content)
 })
 
 bot.on('guildMemberAdd', member => {

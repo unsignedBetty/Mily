@@ -7,7 +7,7 @@ bot.on('ready', function () {
 })
 
 var lastAsk
-var prefix = "mily!";
+var prefix = ";";
 
 bot.on('message', message => {
 	if(message.content === "<@373835182857388053>") {

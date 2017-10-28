@@ -3,7 +3,7 @@ const bot = new Discord.Client()
 
 bot.on('ready', function () {
 	console.log("Mily est ici!")
-	bot.user.setStatus("away")
+	bot.user.setStatusIdle()
 })
 
 var lastAsk

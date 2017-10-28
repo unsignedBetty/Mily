@@ -9,7 +9,7 @@ bot.on('ready', function () {
 var lastAsk
 var prefix = ";";
 
-bot.on('message', message => {
+bot.on('message', function(message) => {
 	if(message.content === "<@373835182857388053>") {
 		message.reply("Hey there! :heart:")
 	}

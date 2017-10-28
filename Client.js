@@ -1,10 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 
-function random(max) {
-	Math.floor(Math.random() * max) +1
-}
-
 bot.on('ready', function () {
 	console.log("Mily est ici!")
 	//Discord.setStatus("away", "Being developed! <3")
@@ -12,10 +8,10 @@ bot.on('ready', function () {
 var lastAsk
 bot.on('message', message => {
 	if(message.content === "<@373835182857388053>") {
-		message.reply("Hey! :heart:")
+		message.reply("Hey there! :heart:")
 	}
 	else if(message.content.indexOf("<@373835182857388053>") > -1 & message.content !== lastAsk) {
-		var rand = random(6)
+		var rand = Math.floor(Math.random() * 6) +1
 		if (rand === 1) {
 			message.reply("Yes! ;D")
 		}

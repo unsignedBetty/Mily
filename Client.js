@@ -36,7 +36,7 @@ bot.on('message', message => {
 		lastAsk = message.content
 	}
 	//COMMANDS//
-	var cmd = message.content.toString().Split(" ")
+	var cmd = message.content.Split(" ")
 	
 	if (cmd[0] == prefix+"slap") {
 		message.reply("What are you trying to do there? :angry:")

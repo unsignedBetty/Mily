@@ -36,7 +36,7 @@ bot.on('message', message => {
 	else if(message.content.indexOf("?slap") > -1) {
 		message.reply("What are you trying to do there? :angry:")
 	}
-	console.log(message.channel.server.detailsOf(message.author).nick + message.content)
+	//console.log(message.content)
 })
 
 bot.on('guildMemberAdd', member => {
